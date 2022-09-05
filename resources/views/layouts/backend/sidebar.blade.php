@@ -20,8 +20,8 @@
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Client</a>
                 <div class="dropdown-menu bg-transparent border-0">
                     <a href="{{ route('client.index') }}" class="dropdown-item">Add Client</a>
-                    <a href="typography.html" class="dropdown-item">Typography</a>
-                    <a href="element.html" class="dropdown-item">Other Elements</a>
+                    <a href="{{ route('client.view') }}" class="dropdown-item">View Client</a>
+                    {{-- <a href="element.html" class="dropdown-item">Other Elements</a> --}}
                 </div>
             </div>
             <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>

@@ -22,4 +22,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/client',[ClientController::class,'index'])->name('client.index');
+Route::get('/client',[ClientController::class,'create'])->name('client.index');
+Route::post('/client/insert',[ClientController::class,'store'])->name('client.store');
+Route::get('/client/view',[ClientController::class,'index'])->name('client.view');
+Route::get('/client/show/{id}',[ClientController::class,'show']);
+Route::get('/client/edit/{id}',[ClientController::class,'edit']);
