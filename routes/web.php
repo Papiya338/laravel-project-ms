@@ -21,9 +21,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-<<<<<<< HEAD
+
+// <<<<<<< HEAD>>>
 Route::get('/project', [App\Http\Controllers\ProjectController::class, 'index'])->name('project');
-=======
+
+// =======>>
 
 Route::get('/client',[ClientController::class,'index'])->name('client.index');
->>>>>>> c70fd6bf283ba456acc0045866763d9cf6da8789
+// >>>>>>> c70fd6bf283ba456acc0045866763d9cf6da8789
